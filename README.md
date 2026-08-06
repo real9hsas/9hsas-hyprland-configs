@@ -35,3 +35,6 @@ brightnessctl (for laptops)
 
 
 `cp wallpaper.png $HOME/.config/hypr/`
+
+
+Press Win + M to exit Hyprland and relogin
