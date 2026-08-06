@@ -7,5 +7,9 @@
 `cd .config/hypr`
 
 `cp hyprland.lua $HOME/.config/hypr/`
+
+
 `cp hyprpaper.conf $HOME/.config/hypr/`
+
+
 `cp wallpaper.png $HOME/.config/hypr/`
