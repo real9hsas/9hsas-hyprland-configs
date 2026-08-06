@@ -279,22 +279,6 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
--- 9hsas's keybinds
-
--- BROWSERS --
-
--- Firefox:
--- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
-
--- LibreWolf (Firefox) [Main]
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("librewolf"))
-
--- USEFUL THINGS --
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o /home/real9hsas/Hyprshot")) -- Screenshot
-hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper
-hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("brightnessctl set 5%-")) -- Control Laptop Brightness
-hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("brightnessctl set 5%+")) -- Control Laptop Brightness
-
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
@@ -329,6 +313,21 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
+-- 9hsas's keybinds
+
+-- BROWSERS --
+
+-- Firefox:
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
+
+-- LibreWolf (Firefox) [Main]
+-- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("librewolf"))
+
+-- USEFUL THINGS --
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Hyprshot")) -- Screenshot
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper
+-- hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("brightnessctl set 5%-")) -- Control Laptop Brightness
+-- hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("brightnessctl set 5%+")) -- Control Laptop Brightness
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
