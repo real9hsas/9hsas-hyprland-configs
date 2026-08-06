@@ -22,6 +22,12 @@ brightnessctl (for laptops)
 
 # Howto?:
 
+Press `Ctrl + Alt + F4` to exit GUI and go with CLI
+
+Log in on CLI
+
+And type these commands:
+
 `git clone https://github.com/real9hsas/9hsas-hyprland-configs`
 
 `cd 9hsas-hyprland-configs`
@@ -37,4 +43,4 @@ brightnessctl (for laptops)
 `cp wallpaper.png $HOME/.config/hypr/`
 
 
-Press Win + M to exit Hyprland and relogin
+Once done, type `reboot` to restart the system.
