@@ -310,7 +310,8 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 
 -- USEFUL THINGS --
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Hyprshot")) -- Screenshot
-hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper
+-- hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper (Legacy) 
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("hyprpaper")) -- Changes wallpaper without pkill
 -- hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("brightnessctl set 5%-")) -- Control Laptop Brightness
 -- hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("brightnessctl set 5%+")) -- Control Laptop Brightness
 
