@@ -20,6 +20,8 @@ brightnessctl (for laptops)
 
 More packages is on the [packages.sh file](https://github.com/real9hsas/9hsas-hyprland-configs/blob/main/packages.sh)
 
+USED FOR HYPRLAND 0.55+!!!
+
 ------
 
 # Howto?:
