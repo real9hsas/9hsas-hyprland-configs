@@ -10,6 +10,7 @@ hl.monitor({
     scale    = "1",
 })
 
+hl.config({misc = {disable_splash_rendering = true}})
 
 ---------------------
 ---- MY PROGRAMS ----
