@@ -40,6 +40,7 @@ local menu        = "hyprlauncher"
 -- 9hsas's autostart
 
 hl.on("hyprland.start", function ()
+    hl.exec_cmd("nm-applet")
     hl.exec_cmd("hyprpaper & waybar")
 end)
 
