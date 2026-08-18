@@ -40,8 +40,11 @@ local menu        = "hyprlauncher"
 -- 9hsas's autostart
 
 hl.on("hyprland.start", function ()
-    hl.exec_cmd("nm-applet")
-    hl.exec_cmd("hyprpaper & waybar")
+hl.exec_cmd("systemctl --user start hyprpolkitagent")
+hl.exec_cmd("systemctl --user start xdg-desktop-portal-hyprland")
+hl.exec_cmd("systemctl --user start xdg-desktop-portal")
+hl.exec_cmd("nm-applet")
+hl.exec_cmd("waybar & hyprpaper")
 end)
 
 -------------------------------
@@ -313,6 +316,11 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Hyprshot")) -- Screenshot
 -- hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper (Legacy) 
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("hyprpaper")) -- Changes wallpaper without pkill
+
+-- BRIGHTNESS FOR LAPTOPS -- 
+-- This is my keybind of my laptop (ASUS TUF Gaming A15) --
+-- If you got diffenct model, you can change it --
+
 -- hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("brightnessctl set 5%-")) -- Control Laptop Brightness
 -- hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("brightnessctl set 5%+")) -- Control Laptop Brightness
 
