@@ -311,6 +311,12 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 -- LibreWolf (Firefox) [Main]
 -- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("librewolf"))
 
+-- Brave (Chromium)
+-- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("brave"))
+
+-- Chromium
+-- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("chromium"))
+
 -- USEFUL THINGS --
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Hyprshot")) -- Screenshot
 -- hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("pkill hyprpaper && hyprpaper")) -- Taskkill and restart hyprpaper (Legacy) 
